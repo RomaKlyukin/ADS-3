@@ -19,8 +19,8 @@ int cbinsearch(int *arr, int size, int value) {
     int mid = left + (right - left) / 2;
     if (arr[mid] == value) {
       k = 1;
-      while(true) {
-        if(arr[mid] == arr[mid + sc]) {
+      while (true) {
+        if (arr[mid] == arr[mid + sc]) {
           k++;
           sc++;
         } else {
@@ -28,8 +28,8 @@ int cbinsearch(int *arr, int size, int value) {
         }
       }
       sc = 1;
-      while(true) {
-        if(arr[mid] == arr[mid - sc]) {
+      while (true) {
+        if (arr[mid] == arr[mid - sc]) {
           k++;
           sc++;
         } else {
